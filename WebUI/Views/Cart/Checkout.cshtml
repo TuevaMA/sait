@@ -1,0 +1,49 @@
+﻿@model sait.domein.Entities.ShippingDetails
+
+@{
+    ViewBag.Title = "MarValeria: форма заказа";
+}
+
+<h2>Оформить заказ сейчас</h2>
+<p>Пожалуйста введи ваши контактные данные, и мы сразу отправим товар!</p>
+
+
+@using (Html.BeginForm())
+{ 
+
+    <h3>Данные</h3>
+<div class="form-group">
+    <label>Ваше имя и фамилия:</label>
+    @Html.TextBoxFor(x => x.NamePers, new { @class = "form-control" })
+</div>
+<div class="form-group">
+    <label>Ваш номер телефона:</label>
+    @Html.TextBoxFor(x => x.Telephone, new { @class = "form-control" })
+</div>
+
+    <h3>Адрес доставки</h3>
+    foreach (var property in ViewData.ModelMetadata.Properties)
+    {
+        if (property.PropertyName != "NamePare" && property.PropertyName != "GiftWrap"&&property.PropertyName !="NamePers"&&property.PropertyName !="Telephone")
+        {
+              <div class="form-group">
+                     <label>@(property.DisplayName ?? property.PropertyName)</label>
+                     @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
+               </div>
+    }
+
+}
+
+<h3>Опции</h3>
+<div class="checkbox">
+    <label>
+        @Html.EditorFor(x => x.GiftWrap)
+        Использовать подарочную упаковку?
+    </label>
+</div>
+
+<div class="text-center">
+    <input class="btn btn-primary" type="submit" value="Обработать заказ" />
+</div>
+}
+
