@@ -18,4 +18,10 @@
 	Добавление в корзину
 	Удаление товара из корзины
 	Оформление заказа
-
+![Picture (4)](https://github.com/user-attachments/assets/43ebf676-da93-4805-ba79-a1573ef278a9)
+![Picture (3)](https://github.com/user-attachments/assets/c783781b-daae-4da8-890d-d1cd28cd1c19)
+![Picture (2)](https://github.com/user-attachments/assets/f2583963-c6a8-4bd4-989a-d663d7b0cced)
+![Picture (1)](https://github.com/user-attachments/assets/b572ce8e-1424-4026-95d3-5c9b0daee913)
+![Picture](https://github.com/user-attachments/assets/98029fbf-e225-47b6-81be-82b2674cd0c1)
+![Picture (6)](https://github.com/user-attachments/assets/4c7f65f5-e5ed-4d83-b048-4167b1939dec)
+![Picture (5)](https://github.com/user-attachments/assets/533bd1c2-92f7-44a0-91d1-cfc3cbefa30c)
